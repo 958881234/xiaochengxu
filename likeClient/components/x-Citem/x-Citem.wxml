@@ -1,0 +1,11 @@
+<!--** 列表组件 -->
+<view class="courseItem">
+  <view class="fm">
+    <image src="/assets/images/link-02.png" mode="aspectFill"></image>  
+  </view>
+  <view class="desc">
+    <text class="courseTitle">微信小程序</text>
+    <text class="courseTeacher">测试</text>
+    <text class="courseStudyCount">人数：899人</text>
+  </view>
+</view>

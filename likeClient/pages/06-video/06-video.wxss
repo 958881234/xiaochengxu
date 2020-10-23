@@ -1,0 +1,71 @@
+/* 初始化样式 */
+page,view,image,swiper,swiper-item,navigator,video{
+  box-sizing: border-box;
+}
+/* 公共头部样式 */
+.my_title{
+  display: flex;align-items: center;
+  padding: 10rpx;background-color: #fff;
+}
+.logo{
+  flex: 7;
+}
+.search_icon{
+  flex: 1;display: flex;
+  justify-content: center;align-items: center;
+}
+.user_icon{
+  flex: 2;display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down_app{
+  flex: 3;
+  font-size: 30rpx;
+  display: flex;justify-content: center;
+  align-content: center;
+  background-color: pink;color: #fff;
+  border-radius: 10rpx;padding: 10rpx;
+}
+/* 首页导航样式 */
+page{color: #666;}
+.nav{
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav_item{
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;display: inline-block;
+}
+.nav_item.active{
+  border-bottom: 5rpx solid #de688b;
+}
+/* 视频列表 */
+.video_wrap{
+  display: flex;flex-wrap: wrap;
+  padding: 5rpx;justify-content: space-between;
+}
+.video_item{
+  width: 48%;margin-bottom: 20rpx;
+}
+.video_img{
+  position: relative;
+}
+.video_img image{width: 100%;border-radius: 15rpx;}
+.video_img .video_info{
+  position: absolute;bottom: 10rpx;left: 0;
+  width: 100%;display: flex;justify-content: space-around;
+  color: #fff;font-size: 24rpx;
+}
+ /* 两行显示  省略号 */
+.video_title{
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+

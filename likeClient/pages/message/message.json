@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "最新消息",
+  "usingComponents": {
+    "x-removeList":"/components/x-removeList/x-removeList" 
+  }
+}

@@ -1,0 +1,28 @@
+/* *** 1、view组件 */
+.classDemo{
+  width: 100px;height: 100px;
+  background-color: yellowgreen;
+}
+.tap{
+  background-color: green;
+}
+.viewTest{
+  width: 300rpx;height: 300rpx;background-color: aqua;
+  margin: 10px auto;text-align: center;font-size: 30rpx;
+  border: 1px solid red;color: #000;
+/* 过渡（全部属性，1秒，匀速线性 */
+  transition: all 1s linear; 
+}
+.viewTap{
+  width: 500rpx;height: 500rpx;background-color: olive;
+  margin: 10px auto;text-align: center;font-size: 50rpx;
+  border: 5px dashed blue;color: #fff;
+}
+/* *** 2、text组件 */
+.textDemo text{
+  display: block;
+}
+
+
+
+

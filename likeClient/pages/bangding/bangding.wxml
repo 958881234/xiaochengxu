@@ -1,0 +1,15 @@
+ <!-- ** 绑定 方法测试 -->
+<view>
+    <button bindtap="_handlerTap">按钮测试-触摸</button>
+     <button bindlongtap="_handlerLong">按钮测试-长按350秒</button>
+</view>
+<!-- data-name 自己定义数据属性， -->
+<!-- evt打印出 type:类型，timeStamp：事件生成的时间戳， target：触发事件的属性集合， currentTarget：当前组件属性集合 -->
+<view id="1" class="one" bindtap="_handlerOne" data-name="张三" data-age="18"> 
+  <view id="2" class="tow" bindtap="_handlerTow"> 
+    <view id="3" class="three" bindtap="_handlerThree"> </view>
+  </view>
+</view>
+viewe 
+<view class="tt" bindtouchstart="_hTouchstart" bindtouchmove="_hTouchmove" bindtouchend="_hTouchend"> 事件类型测试 - touch系列，移动 </view>
+

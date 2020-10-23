@@ -1,0 +1,101 @@
+
+<x-search/>
+
+<view class='slider'>
+	<swiper indicator-dots="true" autoplay="{{ true }}" interval="2500" duration="400" circular>
+		<swiper-item wx:for="{{ sliderList }}" wx:key="id">
+			<image src="{{ item.image }}" width="375" height="150" mode="aspectFill" lazy-load 
+			bindtap="_hadlerTap"/>
+		</swiper-item>
+	</swiper>
+</view>
+
+<!-- 测试入口 -->
+<view class="index-nav">
+ <block wx:for="{{ceList}}" :wx:key="index">
+   <navigator class="nav-item bdr" url="{{item.path}}">
+		<text>{{item.name}}</text>
+	</navigator>
+ </block>
+</view>
+
+
+
+<view class="index-nav">
+	<navigator class="nav-item bdr" url="/pages/bangdingAl/bangdingAl">
+		<image src="/assets/icons/grid-02.png"></image>
+		<text>{{message}}</text>
+		<text>事件绑定案例GO</text>
+	</navigator>
+
+	<navigator class="nav-item bdr" url="/pages/bangding/bangding">
+		<image src="/assets/icons/grid-02.png"></image>
+		<text>事件绑定测试</text>
+		<checkbox checked="true"></checkbox>
+	</navigator>
+
+	<!-- isNb css 条件渲染 -->
+	<navigator class="nav-item bdr {{isNb ? 'borderB' : ''}}" url="/pages/bangdingMp/bangdingMp">
+		<text>
+             <!-- isNb HTML 条件渲染 -->
+             <text class="isStar" wx:if="{{isNb}}">冒泡绑定测试</text>
+		{{ceshiNumber >=2000 ? ceshiNumber/1000 + 'k' : ceshiNumber }}
+			<!-- 使用 wxs 方法 过滤数据 -->
+		Wxs方法过滤：{{ numTool.parseNum(ceshiNumber) }}人
+		</text>
+	</navigator>
+
+	<!-- block 没有意义 只是包裹盒子 -->
+	<block wx:if="{{score==100}}">
+		<text >满分</text>
+		<text>奖励个棒棒糖</text>
+	</block>
+	<block wx:elif="{{score>=80}}">
+		<text>及格</text>
+		<text>奖励个搓衣板</text>
+	</block>
+
+	<!-- 根据不同场景使用不同方式，切换不频繁的用if，经常切换的用 hidden -->
+	<view hidden="{{false}}">奖励个搓衣板</view>
+
+
+</view>
+
+<view>
+	<button class="cr" bindtap="_handlerTap">按钮测试-添加数据到数组并更新页面</button>
+</view>
+
+
+<!-- 循环列表渲染-- 首页导航分区 把cat 和 title 传过去，在onLoad中使用options 接收
+ index 是元素对应的索引-->
+<view class='index-nav bgw'>
+	<!--******* 默认用item 和 index ，防止嵌套循环重名，修改属性名 或id名  wx:for-item="courseItem" -->
+	<navigator wx:for="{{ navList }}" wx:key="id" wx:for-index="idx" wx:for-item="courseItem" class='nav-item bdr' url='/pages/shopList/shopList?cat={{ courseItem.id }}&title={{ courseItem.name }}'>
+		<image src='{{ courseItem.icon }}' lazy-load></image>
+		<text>{{ courseItem.name }}</text>
+		<text>索引：{{ idx }}</text>
+	</navigator>
+</view>
+
+
+<view class='divider'></view>
+<!-- 首页入口分区 -->
+<view class='index-enter bgw'>
+	<navigator class='enter-item'>
+		<image src='/assets/images/link-01.png'></image>
+	</navigator>
+	<navigator class='enter-item'>
+		<image src='/assets/images/link-02.png'></image>
+	</navigator>
+</view>
+
+<wxs module="numTool">
+	function parseNum(count){
+		if(count<1000){return count}
+		if(count>=1000&&count<10000){return count/1000+'K'}
+		if(count>=10000&&count<1000000){return (count/10000).toFixed(2)+'W'}
+	}
+	module.exports = {
+		parseNum:parseNum
+	}
+</wxs>

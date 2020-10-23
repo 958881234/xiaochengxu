@@ -1,0 +1,10 @@
+.one {
+  background:red;
+  width: 400rpx;height: 400rpx;
+}
+.tow{
+  background:yellow; width: 200rpx;height: 200rpx;
+}
+.three{background:blue; width: 100rpx;height: 100rpx;}
+.tt{ background:blueviolet;
+  width: 400rpx;height: 400rpx;}

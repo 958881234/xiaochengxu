@@ -1,0 +1,5 @@
+/* pages/04-zidingyizujian/04-zidingyizujian.wxss */
+.xs{
+  width: 100%;
+  height: 550rpx;
+}

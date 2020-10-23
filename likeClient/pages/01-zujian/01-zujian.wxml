@@ -1,0 +1,32 @@
+<!-- 1 触摸增加样式，几种选择-看文档  （组件-视图容器） -->
+<view class="classDemo" hover-class="tap" hover-start-time="0">1</view>
+<!-- 2 触摸后 容器变大，文字变大，颜色更改 -->
+<view class="viewTest" hover-class="viewTap">这是一个容器</view>
+<!-- 3 text设置空格 -->
+<view class="textDemo">
+  <text space="ensp">设置 空格</text>
+  <text space="emsp">设置 空格</text>
+  <text space="nbsp">设置 空格</text>
+  <text decode="{{true}}">设置 &nbsp;&nbsp;空格</text>
+</view>
+
+<!--4  button 按钮 -->
+<button size="mini">登录</button>
+<button type="primary">登录</button>
+<!-- 登录按钮，空格测试 -->
+<button type="warn">登录</button>
+<button type="primary" plain="{{true}}">登录</button>
+<button type="warn" disabled="{{true}}">登录</button>
+<button type="primary" loading>登录</button>
+<button open-type="getUserInfo" bindgetuserinfo="_getUserInfo">获取用户名</button>
+<button open-type="getUserInfo" bindgetphonenumber="_getPhoneNumber">获取手机号</button>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+<!-- 拨打电话 -->
+<text bindtap="handleCallPhone" class="iconfont icon-l-tel"></text>

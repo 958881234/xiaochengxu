@@ -1,0 +1,7 @@
+ <!-- **事件绑定案例--- 长按抖动，并且出现删除 ** -->
+<view class="index-nav bgw  {{isDelete ? 'deletItem':''}}" bindlongpress="_deleteItem">
+        <image src='{{ xList.icon }}' lazy-load></image>
+        <text>{{ xList.name }}{{ index }}</text>
+        <!-- 因为使用频率高，所用用hidden -->
+        <view class="delBtn" hidden="{{!isDelete}}" bindtap="_handerDelete">X</view>
+</view>

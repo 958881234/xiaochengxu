@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "weui 样式库测试",
+  "usingComponents": {
+    "x-searchBar":"/components/x-searchBar/x-searchBar" 
+  }
+}

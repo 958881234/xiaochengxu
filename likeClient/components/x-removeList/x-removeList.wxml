@@ -1,0 +1,8 @@
+<!-- 删除消息组件 -->
+<movable-area class="area">
+	<movable-view direction="horizontal" bindtap="handleAddFriend" class="view">{{userMessage.nickName}}</movable-view>
+	<navigator url="{{'/pages/08-jiaoyouDetail/08-jiaoyouDetail?userId='+userMessage._id}}" open-type="navigate">
+		<image class="imageE" src="{{userMessage.userPhoto}}"></image>
+	</navigator>
+	<view class="delete" bindtap="handeDelMessage">删除</view>
+</movable-area>

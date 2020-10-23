@@ -1,0 +1,6 @@
+<!-- 修改头像 -->
+<button open-type="getUserInfo" bindgetuserinfo="_bindGetUserInfo">使用微信头像</button>
+<button bindtap="_bandleBtn">设置自定义头像</button>
+<image bindtap="_handleUploadImage" src="{{userPhoto}}"></image>
+ 
+

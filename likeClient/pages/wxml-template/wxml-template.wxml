@@ -1,0 +1,9 @@
+<text>wxml-模板的使用</text>
+
+<!-- 引入模板 -->
+<import src="/templates/itlike/itlike.wxml" />
+
+<!-- 使用模板 -->
+<template is="itlike" data="{{title:'Python课程学习',desc:'大数据+人工智能'}}"></template>
+
+

@@ -1,0 +1,8 @@
+.alContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.alContainer x-item {
+  margin: 10px 0;
+}

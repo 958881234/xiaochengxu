@@ -1,0 +1,38 @@
+<view class="avatar center">
+    <image src='{{userPhoto}}'></image>
+    <text wx:if="{{logged}}">欢迎您：{{nickName}}</text>
+    <button wx:else disabled="{{disabled}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'  url="../endUserInfo/headImg/headImg" >
+        <text>修改头像</text>
+    </navigator>
+     <navigator class='cell-item arrow' url="{{'../08-jiaoyouDetail/08-jiaoyouDetail?userId='+id}}">
+        <text>个人主页</text>
+    </navigator>
+    <navigator class='cell-item arrow' url="">
+        <text>好友列表</text>
+    </navigator>
+    <navigator class='cell-item arrow' url="../endUserInfo/signature/signature">
+        <text>修改个性签名&位置共享</text>
+    </navigator>
+    <navigator class='cell-item arrow'>
+        <text>我的优惠券</text>
+    </navigator>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>常见问题</text>
+    </navigator>
+    <navigator class='cell-item arrow'>
+        <text>使用条款</text>
+    </navigator>
+</view>
+<view class='divider'></view>
+<view class='cell'>
+    <navigator class='cell-item arrow'>
+        <text>设置</text>
+    </navigator>
+</view>

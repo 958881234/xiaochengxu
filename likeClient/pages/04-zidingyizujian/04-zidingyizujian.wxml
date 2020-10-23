@@ -1,0 +1,15 @@
+<!-- 
+  1、js文件中定义的数据items，传到子组件使用，子组件用segmentItems接收 
+  2、父组件接收子组件的 _bindSelectChange 方法 传递的数据
+  3、segment-cls 定义的样式 给子组件使用，在子组件js中声明设定类名规范
+-->
+<!-- <x-tabBar segmentItems="{{items}}" bind:selectChange="_bindSelectChange"/> -->
+
+<x-tabBarPane segmentItems="{{items}}" segment-cls="xs">
+  <view slot="0">0
+    <button>按钮</button>
+  </view>
+  <view slot="1">1
+    <switch></switch>
+  </view>
+</x-tabBarPane >

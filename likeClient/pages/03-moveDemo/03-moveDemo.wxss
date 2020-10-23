@@ -1,0 +1,38 @@
+/* pages/03-moveDemo/03-moveDemo.wxss */
+.ma{
+  width: 400rpx;
+  height: 400rpx;
+  background-color: orange;
+}
+.mv{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: blue;
+}
+.mv2{
+  width: 200rpx;
+  height: 100rpx;
+  background-color: red;
+}
+/* 案例 */
+.cell{
+  height: 100rpx;background-color: orange;
+  margin-top:100rpx;display: flex;
+}
+.mm{
+  background-color: #999;height: 100%;
+  flex:1;
+}
+.mvv{
+  height: 100rpx;
+  width: 100vw;
+  /* width: 750rpx; */
+  background-color: yellow;
+  z-index: 999;
+}
+.delBtn{
+  width: 100rpx;
+  line-height: 100rpx;
+  font-size: 22rpx;
+}
+

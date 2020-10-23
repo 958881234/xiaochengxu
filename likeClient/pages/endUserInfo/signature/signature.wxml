@@ -1,0 +1,8 @@
+<!-- 设置 * 个性签名 -->
+<button bindtap="_handleBtn">设置个性签名</button>
+<input type="text" value="{{signature}}" bindinput="_handleText"></input>
+<!-- 位置共享 -->
+<view>
+  <text>开启共享位置</text>
+  <switch checked="{{isLocation}}" bindchange="_switchChange"></switch>
+</view>

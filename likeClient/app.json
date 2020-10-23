@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/contact/contact",
+    "pages/shopList/shopList",
+    "pages/bangding/bangding",
+    "pages/bangdingAl/bangdingAl",
+    "pages/bangdingMp/bangdingMp",
+    "pages/wxml-template/wxml-template",
+    "pages/weui/weui",
+    "pages/01-zujian/01-zujian",
+    "pages/02-login/02-login",
+    "pages/03-moveDemo/03-moveDemo",
+    "pages/04-zidingyizujian/04-zidingyizujian",
+    "pages/05-goodShopping/05-goodShopping",
+    "pages/06-video/06-video",
+    "pages/06-video_detail/06-video_detail",
+    "pages/07-dianshang/07-dianshang",
+    "pages/06-databaseT/06-databaseT",
+    "pages/endUserInfo/signature/signature",
+    "pages/endUserInfo/headImg/headImg",
+    "pages/08-jiaoyou/08-jiaoyou",
+    "pages/08-jiaoyouDetail/08-jiaoyouDetail",
+    "pages/09-near/09-near"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f60",
+    "navigationBarTitleText": "本地宝",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabs/home.png",
+        "selectedIconPath": "assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "assets/tabs/message.png",
+        "selectedIconPath": "assets/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "assets/tabs/profile.png",
+        "selectedIconPath": "assets/tabs/profile-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "大杂烩",
+        "iconPath": "assets/tabs/contact.png",
+        "selectedIconPath": "assets/tabs/contact-active.png"
+      }
+    ]
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息用于小程序接口展示"
+    }
+  },
+  "sitemapLocation": "sitemap71.json"
+}

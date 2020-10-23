@@ -1,0 +1,28 @@
+<!-- 自定义组件一部分，
+** 1、点击头部tab切换样式 
+** 2、触发一个自定义事件，并且把数据传递出去(事件名称,要传递的参数,事件相关选项
+**
+ -->
+<view class="segmentBar">
+    <block wx:for="{{segmentItems}}" wx:key="index">
+      <!-- 点击 根据索引增加显示样式 -->
+       <view class="segmentItem {{currentIndex==index?'active':''}}" bindtap="_bandlerTap" id="{{index}}">
+          <text class="title">{{item.title}}</text>
+          <text class="subTitle">{{item.subTitle}}</text>
+       </view>
+    </block>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

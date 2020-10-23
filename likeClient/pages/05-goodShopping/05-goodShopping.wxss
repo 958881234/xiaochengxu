@@ -1,0 +1,5 @@
+/* pages/05-goodShopping/05-goodShopping.wxss */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}

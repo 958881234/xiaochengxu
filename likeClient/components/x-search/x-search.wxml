@@ -1,0 +1,29 @@
+<view class="{{isFocus ? 'containerFocus':'container'}}">
+	<view class="search">
+		<view class="serch-text">
+			<text class="iconfont icon-l-scanning"></text>
+      <!-- 软键盘显示搜索confirm-type="search" -->
+			<input type="text" placeholder="搜索" bindfocus="handleFocus" bindconfirm="handleConfirm" confirm-type="search"></input>
+		</view>
+		<view wx:if="{{isFocus}}" class="search-cancel" bindtap="handleCancel">取消</view>
+	</view>
+
+	<view class="search-history">
+		<text>历史记录</text>
+		<text bindtap="handleHistoryDelete" class="iconfont icon-l-set"></text>
+	</view>
+	<view class="search-history-btn">
+    <text bindtap="handleHistoryItemDel" data-text="{{item}}" wx:for="{{historyList}}" wx:key="{{index}}">{{item}}</text>
+	</view>
+
+	<navigator wx:for="{{searchList}}" wx:key="{{index}}" url="{{'/pages/08-jiaoyouDetail/08-jiaoyouDetail?userId='+item._id}}" open-type="navigate">
+		<view class="searchList-item">
+			<view>
+				<image src="{{item.userPhoto}}" />
+				<text>{{item.nickName}}</text>
+			</view>
+			<text class="iconfont icon-you"></text>
+		</view>
+	</navigator>
+
+</view>

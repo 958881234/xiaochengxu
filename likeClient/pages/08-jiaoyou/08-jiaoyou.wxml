@@ -1,0 +1,26 @@
+<!-- 使用 wxs 方法 过滤 文字长度和数字结尾值 -->
+<wxs src="../../utils/wordSplit.wxs" module="m1" />
+<wxs src="../../utils/unitFormat.wxs" module="m2"/>
+
+<!-- ** 功能：点赞，wxs过滤工具，排序 ** -->
+<view class="index-tab">
+	<view class="{{current == 'links'?'active':''}}" data-current="links" bindtap="handleCurrent">推荐</view>
+<view class="{{current == 'time'?'active':''}}" data-current="time" bindtap="handleCurrent">最新</view>
+</view>
+<view class="index-list">
+	<view class="index-list-item" wx:for="{{listData}}" wx:key="{{index}}">
+		<image mode="aspcetFill" src="{{item.userPhoto}}" data-id="{{item._id}}" bindtap="handleDetail"></image>
+
+		<view class="index-list-text">
+		<!-- 使用 wxs方法定义的工具过滤 m1 -->
+			<text>{{m1.wordSplit(item.nickName)}}</text>
+			<!-- 使用 data-id 自定义属性 拿到点击的id 点赞-->
+			<text bindtap="_handleLinks" data-id="{{item._id}}">
+					<text class="iconfont icon-mima"></text>
+					<text>{{m2.unitFormat(item.links)}}</text>
+			</text>
+		</view>
+
+	</view>
+</view>
+<view>点击小锁，增加点赞</view>

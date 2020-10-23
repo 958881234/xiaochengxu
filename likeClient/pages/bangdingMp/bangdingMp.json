@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "事件绑定-案例列表",
+  "usingComponents": {
+    "x-Citem":"/components/x-Citem/x-Citem" 
+  }
+}

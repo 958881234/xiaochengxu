@@ -1,0 +1,24 @@
+.segmentBar{
+  width: 100%;height: 80rpx;
+  display: flex;
+}
+.segmentItem{
+  flex: 1;  /*占满 平均分*/
+  text-align: center;
+  border: 1px solid #ddd;
+  display: flex;
+ flex-direction: column; /*子盒子竖着排*/
+ justify-content: center;
+}
+.segmentItem .title{
+  font-size: 30rpx;
+}
+.segmentItem .subTitle{
+  font-size: 22rpx;color: #999;
+}
+.active .title{
+  color: blue;
+}
+.active .subTitle{
+  color: blue;
+}

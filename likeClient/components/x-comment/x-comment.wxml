@@ -1,0 +1,7 @@
+<view class="comment">
+  <view class="top">
+    <image src="{{commentM.pic_url}}"></image>
+    <text>{{commentM.nick_name}}</text>
+  </view>
+  <view>{{commentM.first_comment}}</view>
+</view>

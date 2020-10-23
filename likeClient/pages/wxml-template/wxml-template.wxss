@@ -1,0 +1,2 @@
+/* 引入模板 css */
+@import "/templates/itlike/itlike.wxss"

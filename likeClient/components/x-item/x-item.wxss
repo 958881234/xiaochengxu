@@ -1,0 +1,59 @@
+
+.index-nav {
+  width: 100px;
+  height: 130px;
+  background-color: orange;
+  border-radius: 10px;
+  position: relative;
+}
+/* ！！小程序的图片记得设置宽高 */
+.index-nav image {
+    width: 100px;
+    height: 100px;
+   border-radius: 50%;
+   border:5px dashed red;
+   box-sizing: border-box;
+   background-color: #000;
+}
+.index-nav text{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    display: block;
+}
+.delBtn{
+    position: absolute;
+    top: -6px;
+    right: -6px;width: 20px;height: 20px;line-height: 20px;
+    color: #fff;background-color: red;text-align: center;border-radius: 10px;
+}
+/* 定义关键帧动画 */
+.deletItem{
+    animation:lk-dou 1s 0s infinite ;
+}
+@keyframes lk-dou{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%,20%,
+    30%{
+        transform: rotate(-4deg);
+    }
+    15%,25%,
+    35%{
+        transform: rotate(4deg);
+    }
+    40%{
+        transform: rotate(-2deg);
+    }
+    45%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+

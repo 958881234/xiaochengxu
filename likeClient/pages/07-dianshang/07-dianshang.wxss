@@ -1,0 +1,30 @@
+.video-play{
+  width: 750rpx;
+  height: 421rpx;
+}
+.slide_list{
+  /* 1.5. 给当前父元素设置成伸缩盒模式 */
+  display: flex;
+  /* 1.6. 设置子元素换行能排列 */
+  flex-wrap: wrap;
+}
+.slide_list image{
+  width: 360rpx;padding: 5rpx;
+  height: 200rpx;
+}
+ .slide_list .nav-item {
+  width: 50%;
+    height: 100rpx;
+    /* 1.1. 给当前父元素设置成伸缩盒模式 */
+    display: flex;
+    /* 1.2. 设置垂直排列 */
+    flex-direction: column;
+    /* 1.3.设置主轴居中 */
+    justify-content: center;
+    /* 1.4.设置交叉轴居中 */
+    align-items: center;
+    /* 1.7微信小程序的字号大小官方推荐使用 px */
+    font-size: 14px;
+    /* 2.0.底部边框，直接通过border-bottom */
+    border-bottom: 1rpx solid #ddd;
+}

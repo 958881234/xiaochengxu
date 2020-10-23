@@ -1,0 +1,2 @@
+<!-- 复制文字 -->
+<text bindtap="handleCopyText" class="iconfont icon-l-team"></text>

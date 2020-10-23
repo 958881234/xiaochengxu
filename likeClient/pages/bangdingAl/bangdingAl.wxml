@@ -1,0 +1,9 @@
+<!-- **页面绑定案例 -->
+<view class="alContainer">
+  <block wx:for="{{navList}}" wx:key="id">
+      <x-item xList="{{item}}" index="{{index}}"/>
+  </block>
+</view>
+
+
+

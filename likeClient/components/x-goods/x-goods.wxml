@@ -1,0 +1,5 @@
+<view class="goods">
+    <image src="{{itemM.small_image}}"></image>
+    <text>{{itemM.product_name}}</text>
+    <text>{{itemM.price}}</text>
+</view>

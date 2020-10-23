@@ -1,0 +1,7 @@
+<!-- 附近功能，在地图上监听自己和周围好友用户位置 -->
+<view class="map">
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location
+markers="{{markers}}" bindmarkertap="markertap"></map>
+</view>
+
+

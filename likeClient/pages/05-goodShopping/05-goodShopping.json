@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-goods":"/components/x-goods/x-goods"
+  },
+  "navigationBarTitleText": "购物案例 "
+}

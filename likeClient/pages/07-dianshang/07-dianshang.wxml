@@ -1,0 +1,25 @@
+		<!-- ****** 电商案例，
+		**模拟接口，
+		**封装api.js,
+		**封装request.js ，
+		**点播，直播 *** 
+		-->
+	<!-- 点播放组件 相关 -->
+		<video class="video-play" src="{{videoUrl}}"  custom-cache="{{false}}" bindplay="bindplay" bindpause="bindpause" bindended="bindended" bindtimeupdate="bindtimeupdate"></video>
+	<!-- 富文本组件 -->
+	<view>
+		<rich-text>
+			<h1>富文本组件，转译标签</h1>
+		</rich-text>
+	</view>
+
+	<!-- 列表赋值 -->
+	<view class="slide_list">
+		<block wx:for="{{slidersS}}" wx:key="index" class="nav-item ">
+			<image src="{{item.url}}" lazy-load></image>
+		</block>
+		<button bindtap="_bindSubmit">确认付款</button>
+	</view>
+<!-- 直播播放器 -->
+<live-player src="{{videoUrl}}" id="liveplayer" style="width:750rpx;height:{{height}}px;"></live-player>
+

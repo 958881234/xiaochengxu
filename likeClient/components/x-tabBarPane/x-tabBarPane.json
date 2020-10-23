@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-tabBar":"/components/x-tabBar/x-tabBar"
+  }
+}

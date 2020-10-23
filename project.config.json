@@ -1,0 +1,191 @@
+{
+	"miniprogramRoot": "likeClient/",
+	"cloudfunctionRoot": "likeCloudFuncs/",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.13.1",
+	"appid": "wxd379000a29960e95",
+	"projectname": "2020%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%91%E5%87%BD%E6%95%B0",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "事件绑定",
+					"pathName": "pages/bangding/bangding",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "事件绑定-案例",
+					"pathName": "pages/bangdingAl/bangdingAl",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定事件-列表",
+					"pathName": "pages/bangdingMp/bangdingMp",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "weui样式",
+					"pathName": "pages/weui/weui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "组件",
+					"pathName": "pages/01-zujian/01-zujian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录案例",
+					"pathName": "pages/02-login/02-login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滑动案例",
+					"pathName": "pages/03-moveDemo/03-moveDemo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "自定义组件Tab",
+					"pathName": "pages/04-zidingyizujian/04-zidingyizujian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物案例",
+					"pathName": "pages/05-goodShopping/05-goodShopping",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "云开发测试",
+					"pathName": "pages/06-databaseT/06-databaseT",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "个人中心",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "云开发测试-爬取",
+					"pathName": "pages/06-databaseT/06-databaseT",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "06视频案例",
+					"pathName": "pages/06-video/06-video",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "07电商视频",
+					"pathName": "pages/07-dianshang/07-dianshang",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "08交友点赞",
+					"pathName": "pages/08-jiaoyou/08-jiaoyou",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "交友详情",
+					"pathName": "pages/08-jiaoyouDetail/08-jiaoyouDetail",
+					"query": "userId=d9ea4cfd5f90d6db001bf1620a2d238a",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图-附近用户",
+					"pathName": "pages/09-near/09-near",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

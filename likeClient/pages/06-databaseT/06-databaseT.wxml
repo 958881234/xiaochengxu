@@ -1,0 +1,14 @@
+<!-- 云数据库体验 -->
+<form bindsubmit="_handlerSubmit">
+  <input placeholder="请输入账号" name="account"></input>
+  <input placeholder="请输入密码" name="pwd"></input>
+  <button form-type="submit" id="register">注册</button>
+  <button form-type="submit" id="login">登录</button>
+</form>
+<!-- 云存储体验 -->
+<image src="{{imageSrc}}" bindtap="_handlerChoose"></image>
+
+<!-- 云函数 根据网站地址，抓取其他网站评论 并展示 -->
+<block wx:for="{{comments}}" wx:key="id">
+  <x-comment commentM="{{item}}"/>
+</block>

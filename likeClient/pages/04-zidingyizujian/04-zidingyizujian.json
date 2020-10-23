@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "自定义组件 ",
+  "usingComponents": {
+    "x-tabBar":"/components/x-tabBar/x-tabBar",
+    "x-tabBarPane":"/components/x-tabBarPane/x-tabBarPane" 
+  }
+}

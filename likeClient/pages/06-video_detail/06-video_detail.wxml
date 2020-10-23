@@ -1,0 +1,13 @@
+<!-- 视频详情 -->
+<view class="video_info">
+	<video src="{{videoInfo.videoSrc}}" controls></video>
+	<view class="video_title">{{videoInfo.videoTitle}}</view>
+	<view class="video_detail">
+		<!-- 作者，播放量，评论，时间 -->
+    <text class="author">{{videoInfo.author}}</text>
+    <text class="play_count">{{videoInfo.playCount}}</text>
+    <text class="comment_count">{{videoInfo.commentCount}}</text>
+    <text class="date">{{videoInfo.date}}</text>
+	</view>
+</view>
+

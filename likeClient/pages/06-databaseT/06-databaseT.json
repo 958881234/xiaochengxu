@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "云开发案例 ",
+  "usingComponents": {
+    "x-comment":"/components/x-comment/x-comment"
+  }
+}

@@ -1,0 +1,39 @@
+<view class="container">
+  <image src="/assets/images/itlike.png" class="header"></image>
+  <!-- 登录案例3，在线远程icon -->
+  <view class="loginPane">
+      <form bindsubmit="_handlerSubmit">
+      <view class="formItem">
+        <text class="iconfont icon-yonghuming"></text>
+        <input name="accountV" class="account" placeholder="请输入用户名" 
+        bindinput="_handerAccountInput"></input>
+        <icon type="{{isGood?'success':'warn'}}"></icon>
+      </view>
+
+      <view class="formItem">
+        <text class="iconfont icon-mima"></text>
+        <input name="passwordV" class="password" password placeholder="请输入密码"
+        bindinput="_handerPwdInput"></input>
+      </view>
+
+      <view class="spaceBetween formItem">
+        <checkbox-group name="remPwd" bindchange="_handelerRememberPwd">
+          <checkbox color="tomato" value="1" checked="{{rememberPwd}}">记住密码</checkbox>
+        </checkbox-group>
+
+         <checkbox-group name="autoLin" bindchange="_handelerAutoLogin">
+          <checkbox value="1" checked="{{autoLogin}}">自动登录</checkbox>
+        </checkbox-group>
+      </view>
+      <view>
+        <button type="primary" class="loginBtn" form-type="submit" disabled="{{!canLogin}}">登录</button>
+      </view>
+      <view>
+        <button class="registerBtn">注册</button>
+      </view>
+      </form>
+
+  </view>
+
+
+</view>

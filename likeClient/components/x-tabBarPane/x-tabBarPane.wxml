@@ -1,0 +1,31 @@
+<!-- 自定义组件 二部分 
+数据传递：04-zidingyizujian -> x-tabBarPane -> x-tabBar 
+** segment-cls 抛出来的样式，让父组件样式在子组件生效
+** segmentItems 父组件 04-zidingyizujian 传来的值，传给子组件的子组件
+** selectChange 子组件 x-tabBar 传来的自定义方法_handlerSelectChange， 点击头部切换下面的方法，改变currentIdx 索引（传来点击的索引）
+** _handlerChange 滑动下面的方法 切换上面
+-->
+<view class="segmentPane segment-cls">
+  <x-tabBar id="x-sp-sb" segmentItems="{{segmentItems}}" bind:selectChange="_handlerSelectChange"/>
+    <swiper circular class="segmentContainer" current="{{currentIdx}}" bindchange="_handlerChange">
+    <block wx:for="{{segmentItems}}" wx:key="index">
+      <swiper-item>
+         <!-- <view>page{{index}}</view> -->
+
+         <!-- 使用插槽，根据name的索引，在父组件可以添加其他标签内容 -->
+         <slot name="{{index}}"/>
+      </swiper-item>
+    </block>
+    </swiper>
+    <slot></slot>
+</view>
+
+
+
+
+
+
+
+
+
+
